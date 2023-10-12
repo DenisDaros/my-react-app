@@ -1,7 +1,7 @@
 import luckyNumber from './utils/luckyNumber';
 
 function LuckyNumber() {
-  const show = false;
+  const show = true;
   return (
     <div>
       <h2 className="subtitle">Seus números da sorte da Mega-Sena são:</h2>
