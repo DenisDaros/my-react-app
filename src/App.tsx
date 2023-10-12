@@ -1,11 +1,11 @@
-import Header from './components/header';
 import LuckyNumber from './components/LuckyNumbers';
+import Greeting from './components/greeting';
 import './style/App.css';
 
 function App() {
   return (
     <div>
-      <Header />
+      <Greeting person={ { firstName: 'Chapolin', lastName: 'Colorado' } } />
       <LuckyNumber />
     </div>
   );

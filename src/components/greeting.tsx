@@ -1,7 +1,12 @@
-function Header() {
-  const firstName = 'Rosária';
-  const lastName = 'Vargas';
+type GreetingProps = {
+  person: {
+    firstName: string;
+    lastName: string;
+  };
+};
 
+function Greeting({ person }: GreetingProps) {
+  const { firstName, lastName } = person;
   return (
     <div>
       <h1 className="greeting">
@@ -14,4 +19,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Greeting;
